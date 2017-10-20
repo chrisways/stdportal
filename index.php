@@ -35,8 +35,6 @@
 		$pwd = $_POST['pwd'];
 		$pwd = sha1($pwd);
 	}*/
-	//$_POST['matric'] = 160064;
-	//$_POST['passcode'] = 'fm';
 	if(isset($_POST['matric']))
 	{
 		$matric = $_POST['matric'];
@@ -110,13 +108,16 @@
 <script src="js/Chart.js"></script>
 <!-- //chart -->
  <!-- js-->
-<script src="js/jquery-1.11.1.min.js"></script>
+<!--<script src="js/jquery-1.11.1.min.js"></script>-->
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/jquery-ui.js"></script>
 <script src="js/modernizr.custom.js"></script>
 <!--webfonts-->
 <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <!--//webfonts--> 
 <!--animate-->
 <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+<link type="text/css" rel="stylesheet" href="css/jquery-ui.css" />
 <script src="js/wow.min.js"></script>
 	<script>
 		 new WOW().init();
@@ -284,6 +285,7 @@
         <!--//footer-->
 	</div>
 	<!-- Classie -->
+<!--
 		<script src="js/classie.js"></script>
 		<script>
 			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
@@ -304,6 +306,7 @@
 				}
 			}
 		</script>
+-->
 	<!-- Bootstrap Core JavaScript --> 
 		
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -317,7 +320,23 @@
 		<script src="js/scripts.js"></script>
 		<!--//scrolling js-->
 		
-		
+		<script>
+			$(document).ready(function(){
+				$("#showLeftPush").click(function(){
+					if($("nav.cbp-spmenu").is(':visible')){
+						$("nav.cbp-spmenu").toggle('slide',{direction:'right'},1000,function(){
+							$("#page-wrapper").animate({'margin':'0'});
+						});
+						
+					}else{
+						$("#page-wrapper").animate({'margin-right':'19.3em'},function(){
+							$("nav.cbp-spmenu").toggle('slide',{direction:'left'},1000);
+						});
+					
+					}
+				});
+			})
+		</script>
 		
 		
 		
