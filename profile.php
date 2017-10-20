@@ -226,7 +226,7 @@ if (isset( $_SESSION['stid'])){
 							<div class="_header">
 								<h3>Profile Page</h3>
 								<div id="pass">
-									<img src="images/placeholder.png" width="80" height="80" />
+									<img src="<?php $stphoto = (isset($_SESSION['stphoto']))?$_SESSION['stphoto']:'images/placeholder.png'; echo $stphoto; ?>" width="80" height="80" class="img-circle img-responsive" />
 								</div>
 							</div>
 							<?php //echo $_SESSION['stphoto'] ?>

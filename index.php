@@ -236,7 +236,7 @@
 						<li class="dropdown profile_details_drop">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 								<div class="profile_img">	
-									<span class="prfil-img"><img width="100" height="100" src="<?php echo $_SESSION['stphoto']; ?>" alt=""> </span> 
+									<span class="prfil-img"><img width="100" height="100" class="img-circle img-responsive" src="<?php $stphoto = (isset($_SESSION['stphoto']))?$_SESSION['stphoto']:'images/placeholder.png'; echo $stphoto; ?>" alt=""> </span> 
 									<div class="clearfix"></div>	
 								</div>	
 							</a>
