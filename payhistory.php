@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php session_start(); 
 if(isset($_SESSION['matric']))
 {
@@ -196,6 +197,3 @@ if(isset($_FILES['teller']))
 
     	
 
-    	
-
-            

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 session_start();
 if (isset( $_SESSION['stid'])){
@@ -451,4 +452,5 @@ else{
 	";
 	
 }
+
 ?>

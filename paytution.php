@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php session_start(); 
 $txn_ref = 'NBTS'.time();
 
@@ -250,9 +251,4 @@ calculatecharges(<?php echo $arem ?>);
 </html>
 
 <?php } ?>
-
-    	
-
-    	
-
             
